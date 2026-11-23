@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew & Bloom | Coffee and Good Moments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">☕ Brew<span>&</span>Bloom</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#menu">Our Menu</a><a href="#about">Our Story</a><a href="#visit">Visit Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR LITTLE CORNER OF CALM</p>
+        <h1>Good coffee.<br><em>Better</em> days.</h1>
+        <p class="intro">Freshly brewed coffee, warm bakes and a cosy place to slow down. Your favourite table is waiting.</p>
+        <a class="button" href="#menu">Explore our menu <span>→</span></a>
+        <p class="small-note">♡ Made fresh, served with love.</p>
+      </div>
+      <div class="hero-photo">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1100&q=85" alt="Coffee being prepared in a cafe">
+        <div class="photo-tag">Freshly brewed<br><strong>Every single day</strong></div>
+      </div>
+    </section>
+
+    <section class="welcome section" id="about">
+      <div>
+        <p class="eyebrow">A LITTLE ABOUT US</p>
+        <h2>More than coffee,<br>it's a <em>feeling.</em></h2>
+      </div>
+      <p class="body-copy">Brew & Bloom is a neighbourhood café made for conversations, quiet study sessions and little celebrations. We believe the simplest moments become special with a good cup in hand.</p>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-heading">
+        <div><p class="eyebrow">SOMETHING FOR EVERY MOOD</p><h2>Made to make<br>you <em>smile.</em></h2></div>
+        <p>Our little menu of everyday favourites.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=700&q=80" alt="Coffee">
+          <div><span class="category">COFFEE</span><h3>Classic Cappuccino</h3><p>Espresso, steamed milk and a soft cloud of foam.</p><strong>₹150</strong></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=80" alt="Iced coffee">
+          <div><span class="category">COOL & CREAMY</span><h3>Vanilla Iced Latte</h3><p>Chilled espresso with milk and a hint of vanilla.</p><strong>₹180</strong></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=700&q=80" alt="Fresh croissant">
+          <div><span class="category">FROM THE OVEN</span><h3>Butter Croissant</h3><p>Flaky, golden and baked fresh every morning.</p><strong>₹120</strong></div></article>
+      </div>
+    </section>
+
+    <section class="quote-band"><p>“A cup of coffee and a little kindness can change your whole day.”</p><span>— THE BREW & BLOOM WAY</span></section>
+
+    <section class="visit section" id="visit">
+      <div><p class="eyebrow">COME SAY HELLO</p><h2>Your new favourite<br><em>spot awaits.</em></h2><p class="body-copy">Drop by for your morning coffee or stay a little longer. There's always room for one more.</p></div>
+      <div class="visit-card"><h3>Find us here</h3><p>📍 12 Garden Lane, Vijayawada</p><p>🕘 Monday – Sunday, 9 AM – 9 PM</p><p>✉ hello@brewandbloom.example</p><a class="button dark-button" href="mailto:hello@brewandbloom.example">Get in touch →</a></div>
+    </section>
+
+    <section class="reservation section" id="reservation">
+      <div><p class="eyebrow">SAVE YOURSELF A SEAT</p><h2>Make it a<br><em>coffee date.</em></h2><p class="body-copy">Planning a catch-up or a quiet study session? Send a table request and we'll show a confirmation.</p></div>
+      <form class="reservation-form" id="reservationForm">
+        <label>Your name<input id="guestName" type="text" placeholder="Your name" required></label>
+        <label>Number of guests<select id="guestCount"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>
+        <label>Preferred date<input id="visitDate" type="date" required></label>
+        <button class="button dark-button" type="submit">Request a table →</button>
+        <p id="reservationMessage" class="reservation-message" aria-live="polite"></p>
+        <small>Student demo: requests are confirmed on this page only and are not sent to the café.</small>
+      </form>
+    </section>
+  </main>
+  <footer>© 2026 Brew & Bloom · A student-created café website</footer>
+  <script src="script.js"></script>
+</body>
+</html>
